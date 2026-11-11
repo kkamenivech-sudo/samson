@@ -565,6 +565,11 @@ main { padding-bottom: clamp(72px, 10vw, 128px); }
 .emblem svg { position: relative; width: min(60%, 300px); aspect-ratio: 1; color: var(--ember); opacity: .85;
   filter: drop-shadow(0 0 18px rgba(201,166,74,.45)); }
 @media (max-width: 860px) { .emblem { min-height: 220px; order: -1; } .emblem svg { width: 160px; } }
+
+/* телефон: заголовки и текст разделов вровень с шапкой (колонка под нить нужна только главам) */
+@media (max-width: 860px) {
+  section.wrap.grid > *, .grid.bio-head > *, .grid.bio-head > .span, .grid.bio-head > .hang { grid-column: 1 / -1; }
+}
 </style>
 </head>
 <body>

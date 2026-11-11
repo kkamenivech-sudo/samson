@@ -548,6 +548,11 @@ footer .grid { row-gap: 1.2rem; }
           mask-image: linear-gradient(to bottom, #000 75%, transparent 100%);
 }
 main { padding-bottom: clamp(72px, 10vw, 128px); }
+
+/* телефон: заголовки и текст разделов вровень с шапкой (колонка под нить нужна только главам) */
+@media (max-width: 860px) {
+  section.wrap.grid > *, .grid.bio-head > *, .grid.bio-head > .span, .grid.bio-head > .hang { grid-column: 1 / -1; }
+}
 </style>
 </head>
 <body>
